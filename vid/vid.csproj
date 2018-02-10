@@ -12,4 +12,13 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Movies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\css\site.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="wwwroot\css\bootstrap-lumen.css" />
+  </ItemGroup>
 </Project>
