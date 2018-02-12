@@ -14,9 +14,13 @@
 
   <ItemGroup>
     <Folder Include="Views\Movies\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Customers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\css\site.min.css" />
+    <Content Remove="Views\Home\Contact.cshtml" />
+    <Content Remove="Views\Home\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="wwwroot\css\bootstrap-lumen.css" />

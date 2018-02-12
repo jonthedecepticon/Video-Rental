@@ -41,6 +41,12 @@ namespace vid
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    "MoviesByRelaseDate",
+                    "movies/released/{year}/{month}",
+                    new { controller = "Movies", action = "ByReleaseDate" },
+                    new { year = @"\d{4}", month = @"\d{2}" }
+                );
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
